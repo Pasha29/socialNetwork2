@@ -1,0 +1,63 @@
+.userBlock {
+    border: 1px solid lightslategrey;
+    display: flex;
+    margin-bottom:10px;
+}
+
+.userBlock:last-child {
+    margin-bottom:0;
+}
+
+.followBlock {
+    border-right: 1px solid lightslategrey;
+    text-align: center;    
+}
+
+.imgBlock img {
+    width:80px;
+}
+
+.buttonBlock button {
+    font-size: 17px;
+    background-color: coral;
+    border: 1px solid #4645456c;
+    cursor: pointer;
+    width:100%;
+}
+
+
+.userDataBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 17px;
+    width:100%;
+}
+
+.mainData {
+    width:80%;
+}
+
+.mainData p {
+    margin:5px;
+}
+
+.nameBlock {
+    display: flex;
+    margin-bottom:10px;
+}
+
+.nameBlock p {
+    font-size: 21px;
+}
+
+.addressBlock p {
+    margin:5px;
+    font-size: 21px;
+}
+
+
+
+
+
+

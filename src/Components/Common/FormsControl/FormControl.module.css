@@ -1,0 +1,29 @@
+.commonInput {
+    height:60px;
+    width:100%;
+    box-sizing: border-box;
+    font-size:18px;
+    background-color: #d6d6d66c;
+    border:1px solid #4645456c;
+    padding:0 10px;
+}
+
+.loginInput {
+    height: 40px;
+    border: 1px solid #4645456c;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    background-color: #d6d6d66c;
+}
+
+
+input.error {
+    border: 1px solid red;
+    
+}
+
+span.error {
+    color: red;
+    display:flex;
+}

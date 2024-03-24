@@ -1,0 +1,40 @@
+.authWrapper button {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    background-color: coral;
+    border: 1px solid #4645456c;
+    cursor: pointer;
+}
+
+.formWrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.formWrapper p{
+    margin:10px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* .inputWrapper input{
+    height: 40px;
+    border: 1px solid #4645456c;
+    padding: 0 10px;
+    font-size: 18px;
+    margin-bottom:10px;
+    background-color: #d6d6d66c;
+} */
+
+.rememberMeInput {
+    display: flex;
+    justify-content: center;
+}
+
+.commonError {
+    color:red;
+    font-weight: 500;
+    margin-bottom:15px;
+}

@@ -1,0 +1,29 @@
+.allDialogsBlock {
+    display:flex;
+    flex-direction: column;
+}
+
+.dialogBlock {
+    border:1px solid lightslategrey;
+    display:flex;
+    margin:5px;
+    justify-content: space-evenly;
+}
+ 
+.imgDialogBlock img {
+    width:60px;
+}
+
+.userNameBlock p {
+    font-size:20px;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a.active {
+    text-decoration: none;
+    color:dodgerblue;
+}

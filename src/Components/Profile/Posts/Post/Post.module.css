@@ -1,0 +1,17 @@
+.postBlock {
+    margin: 0 0 10px 0;
+    display: flex;
+  } 
+
+.postBlockImg {
+    margin:0 20px 0 0;
+  }
+  
+  .postBlockImg img {
+    width:40px;
+  }
+  
+  .postText p {
+    font-size:21px;
+    margin: 0;
+  }

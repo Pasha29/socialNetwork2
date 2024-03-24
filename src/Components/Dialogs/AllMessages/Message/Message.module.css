@@ -1,0 +1,9 @@
+.nessageBlock{
+    border:1px solid lightslategrey;
+    text-align: center;
+    margin-bottom:5px;
+}
+
+.textBlock{
+    font-size: 16px;
+}

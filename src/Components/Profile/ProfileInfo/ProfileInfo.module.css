@@ -1,0 +1,29 @@
+.profileBackground img {
+    width:100%;
+    height:200px;
+  }
+  
+  .profile {
+    display:flex;
+    margin:10px 0 0 0;
+  }
+  
+  .profileImg {
+    margin:0 20px 0 0;
+  }
+  
+  .profileImg img {
+    width:130px;
+    height:130px;
+  }
+  
+  .profileData h2 {
+    margin:0;
+  }
+  
+  
+  .profileData p {
+    margin:0;
+    line-height: 24px;
+  }
+  

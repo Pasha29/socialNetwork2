@@ -1,0 +1,64 @@
+.navbar {
+    grid-area: navbar;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: lightslategrey;
+    margin: 10px 0;
+  }
+
+  .linksBlock {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .linksBlock p {
+    margin:0 0 10px 0;
+  }
+  
+  .linksBlock p:last-child {
+    margin:20px 0 10px 0;
+  }
+  
+  .linksBlock a {
+    text-decoration: none;
+    color: black;
+    border-bottom:2px solid purple;
+    text-align: center;
+    font-size:24px;
+  }
+
+  .linksBlock a.active {
+    color: white;
+  }
+
+
+  
+  .friendsBlock {
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin:10px 0;
+  }
+
+/*   .friendBlock{
+
+  }
+
+  .imgBlock {
+
+  } */
+
+  .imgBlock img {
+    width:50px;
+  }
+
+  .nameBlock {
+    text-align: center;
+  }
+
+  .nameBlock p {
+    margin:0;
+  }

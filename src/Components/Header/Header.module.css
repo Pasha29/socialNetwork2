@@ -1,0 +1,41 @@
+.header {
+    grid-area: header;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header img {
+    width:60px;
+    margin:10px;
+  }
+
+  .authData {
+    display: flex;
+    align-items: center;
+    margin-right:10px;
+  }
+
+  .authData p {
+    font-size: 18px;
+    border-bottom: 2px solid purple;
+  }
+
+  .authData button {
+    width:100px;
+    height:40px;
+    font-size:18px;
+    background-color: coral;
+    border:1px solid #4645456c;
+    cursor: pointer;
+  }
+  
+  .authData div {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .authData div p {
+    margin-right:10px;
+  }
