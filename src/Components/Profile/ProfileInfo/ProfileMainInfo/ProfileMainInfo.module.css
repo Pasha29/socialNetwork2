@@ -1,0 +1,23 @@
+.mainInfo p {
+  margin: 5px 0;
+  line-height: 24px;
+}
+
+.mainInfo h2 {
+  margin-bottom: 10px;
+}
+
+.mainInfo button {
+  margin-top:10px;
+  font-size: 17px;
+    background-color: coral;
+    border: 1px solid #4645456c;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.commonError {
+  color:red;
+  font-weight: 500;
+  margin-bottom:15px;
+}

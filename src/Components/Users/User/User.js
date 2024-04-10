@@ -1,6 +1,6 @@
 import React from 'react';
 import css from './User.module.css';
-import undefinedImg from './../../../Materials/profileImg.png';
+import profileImg from './../../../Materials/profileImg.png';
 import { NavLink } from 'react-router-dom';
 
 const User = ({item, ...props}) => {
@@ -9,7 +9,7 @@ const User = ({item, ...props}) => {
 
             <div className={css.followBlock}>
                 <div className={css.imgBlock}>
-                    <NavLink to={`/profile/${item.id}`}><img src={item.photos.small != null ? item.photos.small : undefinedImg} alt="" /></NavLink>
+                    <NavLink to={`/profile/${item.id}`}><img src={ item.photos.small || profileImg } alt="" /></NavLink>
                 </div>
                 <div className={css.buttonBlock}>
 

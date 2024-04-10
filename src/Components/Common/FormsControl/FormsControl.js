@@ -6,9 +6,12 @@ export let Input = ({input, meta, ...props}) => {
     let hasError = meta.touched && meta.error;
     return (
         <>
-            {meta.form !== 'login' ? 
-            <input {...input} {...props} className={`${css.commonInput} ${hasError ? css.error : ''}`}/> :
-            <input {...input} {...props} className={`${css.loginInput} ${hasError ? css.error : ''}`}/>
+            {meta.form === 'login' ?
+            <input {...input} {...props} className={`${css.loginInput} ${hasError ? css.error : ''}`}/> :
+            meta.form === 'profileMainData' ?
+            <input {...input} {...props} className={`${css.profileMainData} ${hasError ? css.error : ''}`}/> :
+            <input {...input} {...props} className={`${css.commonInput} ${hasError ? css.error : ''}`}/>
+            
             }
             {hasError ? <span className={css.error}>{meta.error}</span> : ''}
             

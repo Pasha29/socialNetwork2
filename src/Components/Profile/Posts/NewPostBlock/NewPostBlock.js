@@ -7,6 +7,7 @@ import { Input } from '../../../Common/FormsControl/FormsControl';
 let maxLength10 = maxLength(10);
 
 let PostForm = (props) => {
+  console.log(props.touch);
   return (
     <form onSubmit={props.handleSubmit} className={css.inputWrapper}>
       <div>

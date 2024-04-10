@@ -8,6 +8,7 @@ import { loginTC } from '../../../Redux/Reducers/authReducer';
 import { Navigate } from 'react-router-dom';
 
 const LoginForm = (props) => {
+    console.log(props.error);
     return (
         <form onSubmit={props.handleSubmit}>
             {/* {createField('email', 'Email', Input, [required], null, 'Login111111:')} */}
@@ -27,6 +28,11 @@ const LoginForm = (props) => {
             <div className={css.commonError}>
                 {props.error}
             </div> : ''}
+             {props.captcha && 
+            <div className={css.captchaBlock}>
+                <img src={props.captcha} alt="" />
+                <Field name={'captcha'} placeholder={'Captcha'} component={Input}/>
+            </div>} 
             
             <button>Enter</button>
         </form>
@@ -40,7 +46,7 @@ const ReduxLoginForm = reduxForm({
 const Login = (props) => {
 
     let onSubmit = (formData) => {
-        props.loginTC(formData.email, formData.password, formData.rememberMe);
+        props.loginTC(formData.email, formData.password, formData.rememberMe, formData.captcha);
     }
 
     if(props.isAuth) {
@@ -49,7 +55,7 @@ const Login = (props) => {
     return (
         <div className={css.authWrapper}>
             <div className={css.formWrapper}>
-                <ReduxLoginForm onSubmit={onSubmit}/> 
+                <ReduxLoginForm captcha={props.captcha} onSubmit={onSubmit}/> 
             </div>
         </div>
     );
@@ -57,7 +63,8 @@ const Login = (props) => {
 
 let mapStateToProps = (state) => {
     return {
-        isAuth: state.auth.isAuth
+        isAuth: state.auth.isAuth,
+        captcha: state.auth.captcha
     }
 }
 

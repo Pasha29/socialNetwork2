@@ -10,7 +10,7 @@ import UsersContainer from './Components/Users/UsersContainer';
 import HeaderContainer from './Components/Header/HeaderContainer';
 import Login from './Components/Common/Login/Login';
 import Preloader from './Components/Common/Preloader/Preloader';
-import { BrowserRouter, Route, Routes, useLocation, useNavigate, useParams } from 'react-router-dom';
+import { HashRouter, Navigate, Route, Routes, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { Provider, connect } from 'react-redux';
 import { compose } from 'redux';
 import { initializeStateTC } from './Redux/Reducers/appReducer';
@@ -51,7 +51,6 @@ class App extends React.Component {
           <HeaderContainer />
           <Navbar />
           <div className="contentWrapper">
-
             <Routes>
               <Route path="/profile/:userId?" element={ <ProfileContainer /> } />
               {/* <Route path="/profile/*" element={<ProfileContainer />} /> */}
@@ -61,6 +60,8 @@ class App extends React.Component {
               <Route path="/users/*" element={<UsersContainer />} />
 
               <Route path="/login" element={<Login />} />
+
+              <Route path="/" element={ <Navigate to={'/profile'}/>} />
             </Routes>
           </div>
 
@@ -85,9 +86,9 @@ let AppContainer = compose(
  let MainAppContainer = (props) => {
    return (
    <Provider store={store}>
-     <BrowserRouter>
+     <HashRouter>
       <AppContainer />
-     </BrowserRouter>
+     </HashRouter>
    </Provider>
    )
 }

@@ -1,3 +1,14 @@
 .statusWrapper {
-    margin:10px 0;
+    margin: 10px 0;
+    display: flex;
+}
+
+.statusWrapper p{
+    margin: 0;
+}
+
+.statusWrapper input{
+    width:100%;
+    font-size:16px;
+    box-sizing: border-box;
 }

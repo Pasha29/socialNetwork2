@@ -10,20 +10,31 @@
   
   .profileImg {
     margin:0 20px 0 0;
+    display:flex;
+    flex-direction: column;
+    width:170px;
   }
   
   .profileImg img {
-    width:130px;
-    height:130px;
+    width:100%;
   }
   
+.customInput input {
+  display:none;
+}
+
+.customInput {
+  margin-top:10px;
+  padding: 8px;
+  text-align: center;
+  background-color: #d6d6d66c;
+  border: 1px solid #4645456c;
+  cursor: pointer;
+  font-weight: 500;
+}
+
   .profileData h2 {
     margin:0;
   }
   
-  
-  .profileData p {
-    margin:0;
-    line-height: 24px;
-  }
   

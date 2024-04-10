@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import css from './ProfileStatus.module.css';
 
 // class ProfileStatus extends React.Component {
@@ -49,6 +49,10 @@ const ProfileStatus = (props) => {
     let [editMode, setEditMode] = useState(false);
     let [status, setStatus] = useState(props.status);
 
+    useEffect( () => {
+        setStatus(props.status);
+    }, [props.status])
+
     let activateEditMode = () => {
         setEditMode(true);
     }
@@ -64,10 +68,11 @@ const ProfileStatus = (props) => {
 
     return (
         <div className={css.statusWrapper}>
-                 {editMode ? 
-                 <input autoFocus={true} onBlur={deactivateEditMode} onChange={changeStatus} value={ status } /> :
-                 <p onClick={activateEditMode}>{status || 'No status'}</p>}
-             </div>
+            <p>Status: </p>
+            {editMode ?
+                <input autoFocus={true} onBlur={deactivateEditMode} onChange={changeStatus} value={status} /> :
+                <p onClick={activateEditMode}>{status || 'No status'}</p>}
+        </div>
     );
 }
 
